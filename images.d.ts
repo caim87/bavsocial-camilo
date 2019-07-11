@@ -1,0 +1,6 @@
+declare module '*.svg'
+declare module '*.png'
+declare module '*.jpg'
+declare module '@antv/f2'
+declare module 'react-csv'
+declare module '@kapost/react-component-slider'

@@ -1,0 +1,555 @@
+@font-face {
+  font-family: 'YR-Bold';
+  src: url('./font/YRThree_Bold.otf');
+}
+
+@font-face {
+  font-family: 'YR-Book';
+  src: url('./font/YRThree_Book.otf');
+}
+
+@font-face {
+  font-family: 'YR-Light';
+  src: url('./font/YRThree_Light.otf');
+}
+
+/* Start - General CSS */
+body {
+  font-family: 'YR-Book' !important;
+  background-color: #E5E3E3;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+button:focus {
+  outline:0;
+}
+
+td:active {
+  outline: none;
+  border: none;
+}
+td:focus {
+  outline:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #008FAD !important;
+}
+
+/* header {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+} */
+
+select {
+  border-color: #008FAD;
+  background-color: white;
+  color: #008FAD;
+  padding: 15px;
+}
+option {
+  background-color: white;
+  color: #008FAD;
+}
+
+.analytics-container {
+  padding: 0px 1em;
+}
+
+.analytic-container {
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+/* End - General CSS */
+
+/* Start - Utilities */
+.b-text {
+  font-family: 'YR-Bold' !important;
+}
+
+.n-text {
+  font-family: 'YR-Book' !important;
+}
+
+.l-text {
+  font-family: 'YR-Light' !important;
+}
+
+.alpha-75 {
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.text-gray {
+  color: #C6C6C6;
+}
+
+.text-bavprimary {
+  color: #008FAD;
+}
+.text-bavsecundary {
+  color: #FFAB10;
+}
+.text-bavtertiary {
+  color: #0090AD;
+}
+.text-bavquaternary {
+  color: #FF543D;
+}
+.text-bavquinary {
+  color: #19FAA2;
+}
+
+.vertical-center {
+  width: 90%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.info-title {
+  padding-left: 2.2em;
+  font-size: 9pt;
+}
+
+.info-text {
+  font-size: 9pt;
+}
+
+.title-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+
+/* End - Utilities */
+
+/* Start - Background Colors CSS */
+.bg-bavprimary {
+  background:white;
+  background: -moz-linear-gradient(45deg, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,204,250,1)), color-stop(100%, rgba(0,144,173,1)));
+  background: -webkit-linear-gradient(45deg, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: linear-gradient(45deg, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccfa', endColorstr='#0090ad', GradientType=1 );
+}
+.bg-bavsecundary {
+  background: rgba(0,204,250,1);
+  background: -moz-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,204,250,1)), color-stop(100%, rgba(0,144,173,1)));
+  background: -webkit-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: linear-gradient(to right, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccfa', endColorstr='#0090ad', GradientType=1 );
+}
+.bg-bavtertiary {
+  background: rgba(255,221,159,1);
+  background: -moz-linear-gradient(left, rgba(255,221,159,1) 0%, rgba(255,171,16,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,221,159,1)), color-stop(100%, rgba(255,171,16,1)));
+  background: -webkit-linear-gradient(left, rgba(255,221,159,1) 0%, rgba(255,171,16,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,221,159,1) 0%, rgba(255,171,16,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,221,159,1) 0%, rgba(255,171,16,1) 100%);
+  background: linear-gradient(to right, rgba(255,221,159,1) 0%, rgba(255,171,16,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd9f', endColorstr='#ffab10', GradientType=1 );
+}
+.bg-bavquaternary {
+  background: rgba(0,204,250,1);
+  background: -moz-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,204,250,1)), color-stop(100%, rgba(0,144,173,1)));
+  background: -webkit-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: linear-gradient(to right, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccfa', endColorstr='#0090ad', GradientType=1 );
+}
+.bg-bavquinary {
+  background: rgba(0,204,250,1);
+  background: -moz-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(62,65,234,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,204,250,1)), color-stop(100%, rgba(62,65,234,1)));
+  background: -webkit-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(62,65,234,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(62,65,234,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(62,65,234,1) 100%);
+  background: linear-gradient(to right, rgba(0,204,250,1) 0%, rgba(62,65,234,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccfa', endColorstr='#3e41ea', GradientType=1 );
+}
+.bg-bavsenary {
+  background: rgba(163,253,218,1);
+  background: -moz-linear-gradient(left, rgba(163,253,218,1) 0%, rgba(25,250,164,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(163,253,218,1)), color-stop(100%, rgba(25,250,164,1)));
+  background: -webkit-linear-gradient(left, rgba(163,253,218,1) 0%, rgba(25,250,164,1) 100%);
+  background: -o-linear-gradient(left, rgba(163,253,218,1) 0%, rgba(25,250,164,1) 100%);
+  background: -ms-linear-gradient(left, rgba(163,253,218,1) 0%, rgba(25,250,164,1) 100%);
+  background: linear-gradient(to right, rgba(163,253,218,1) 0%, rgba(25,250,164,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3fdda', endColorstr='#19faa4', GradientType=1 );
+}
+.bg-bavseptenary {
+  background: rgba(255,171,16,1);
+  background: -moz-linear-gradient(left, rgba(255,171,16,1) 0%, rgba(255,84,61,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,171,16,1)), color-stop(100%, rgba(255,84,61,1)));
+  background: -webkit-linear-gradient(left, rgba(255,171,16,1) 0%, rgba(255,84,61,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,171,16,1) 0%, rgba(255,84,61,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,171,16,1) 0%, rgba(255,84,61,1) 100%);
+  background: linear-gradient(to right, rgba(255,171,16,1) 0%, rgba(255,84,61,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffab10', endColorstr='#ff543d', GradientType=1 );
+}
+/* End - Background Colors CSS */
+
+/* Start - Selector Styles */
+.react-select__control {
+  width: 75%;
+  margin: auto;
+  border: none !important;
+  background: none !important;
+  font-family: 'YR-Book';
+}
+
+.react-select__control--is-focused {
+  box-shadow: none !important;
+}
+
+.react-select__value-container {
+  
+  border: none;
+}
+
+.react-select__indicator-separator {
+  opacity: 0;
+}
+
+.react-select__single-value {
+  color: #008FAD !important;
+  font-size: 10pt;
+}
+
+.react-select__indicator {
+  color: #008FAD !important;
+  font-size: 10pt;
+
+}
+
+.react-select__menu {
+  color: black !important;
+  font-size: 10pt;
+  font-family: 'YR-Book';
+}
+
+.react-select__option--is-focused {
+  background: rgba(0,204,250,1);
+  background: -moz-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,204,250,1)), color-stop(100%, rgba(0,144,173,1)));
+  background: -webkit-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  background: linear-gradient(to right, rgba(0,204,250,1) 0%, rgba(0,144,173,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccfa', endColorstr='#0090ad', GradientType=1 );
+  color: white !important;
+}
+/* End - Selector Styles */
+
+/* Start - Calnedar styles */
+.DateRangePicker_picker__directionLeft {
+  left: -20px !important;
+}
+
+.DateRangePicker_picker {
+  border: #008FAD solid 1px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.DateRangePicker, .DateRangePickerInput {
+  width: 100% !important;
+}
+
+.DateInput {
+  width: 48% !important;
+}
+
+.DateRangePicker_picker, .DayPicker, .CalendarMonth, .CalendarMonth_caption, .CalendarMonthGrid {
+  color: #008FAD !important;
+}
+
+.DayPicker_weekHeader {
+  color: #008FAD !important;
+}
+
+.CalendarDay {
+  color: #2D2D2D !important;
+  border: 0px !important;
+}
+
+.DateRangePickerInput__withBorder {
+  border: 0px !important;
+}
+
+.DayPickerNavigation_button {
+  border: 0px !important;
+}
+.DayPickerNavigation_svg__horizontal path {
+  fill: #008FAD !important;
+}
+
+.DateInput_fangShape {
+  fill: #008FAD !important;
+}
+
+.DayPicker_weekHeader_ul {
+  color: #008FAD;
+}
+
+.DateInput_fang {
+  top: 56px !important;
+  left: 58px !important;
+}
+
+.DateInput_input {
+  height: 50% !important;
+  width: 100% !important;
+  border-radius: 50px !important;
+  font-family: 'YR-Light' !important;
+  font-size: 12pt !important;
+  text-align: center !important;
+}
+.DateInput_input {
+  border: 1px solid #008FAD !important;
+  color: #008FAD !important;
+}
+
+.DateInput_input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #008FAD !important;
+  opacity: 1; /* Firefox */
+}
+.DateInput_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #008FAD !important;
+}
+.DateInput_input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #008FAD !important;
+}
+
+.DateRangePickerInput_arrow_svg {
+  display: none;
+}
+.DateRangePickerInput_arrow {
+  width: 10px;
+}
+
+.CalendarDay__selected_span {
+  background: #008FAD !important;
+  color: white !important;
+}
+
+.CalendarDay__selected_span:hover {
+  background: #008FAD !important;
+  color: white !important;
+}
+
+.CalendarDay__selected_start, .CalendarDay__selected_end, .CalendarDay__selected {
+  background: #008FAD !important;
+  color: #C6C6C6 !important;
+}
+
+.CalendarDay__selected_start {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.CalendarDay__selected_end {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.CalendarDay__hovered_span {
+  background: #008FAD !important;
+  color: white !important;
+}
+
+.CalendarDay__blocked_out_of_range {
+  color: #C6C6C6 !important;
+}
+/* End - Calnedar styles */
+
+/* Start - Custom Buttons CSS */
+.btn-bavsocial {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 7px 30px;
+}
+
+.btn-bavsocial-border {
+  color: white;
+  background: none !important;
+  border: 1px solid #00CEFA;
+  border-radius: 50px;
+  padding: 7px 20px;
+}
+/* End - Custom Buttons CSS */
+
+/* Start - Custom Containers CSS */
+.round-container-bavprimary {
+  border-radius: 50px;
+  border: 1px solid #00CEFA;
+}
+.round-container-bavsecundary {
+  border-radius: 50px;
+  border: 1px solid #FFAB10;
+}
+.round-container-bavtertiary {
+  border-radius: 50px;
+  border: 1px solid #0090AD;
+}
+.round-container-bavquaternary {
+  border-radius: 50px;
+  border: 1px solid #FF543D;
+}
+.round-container-bavbavquinary {
+  border-radius: 50px;
+  border: 1px solid #19FAA2;
+}
+/* End - Custom Containers CSS */
+
+/* Start - Loading Screen CSS */
+#loading-panel {
+  background-color: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#loading-spinner {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+}
+/* Start - Loading Screen CSS */
+
+/* Start - Input Text CSS */
+input {
+  margin: auto !important;
+  border: none !important;
+  border-bottom: 1px solid #00CEFA !important;
+  border-radius: 0px !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #C6C6C6 !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #C6C6C6 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #C6C6C6 !important;
+}
+/* End - Input Text CSS */
+
+/* Start - Header CSS */
+.user-name {
+  font-size: 16pt;
+}
+
+.navbar-toggler-icon {
+  background-repeat: none;
+  background-size: 75%;
+  background-image: url('./img/menu-collapse.png') !important;
+}
+
+.navbar-toggler-icon.active {
+  background-image: url('./img/menu-uncollapse.png') !important;
+}
+
+.nav-item-active:hover {
+  color: black;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+/* End - Header CSS */
+
+/* Strat - Calnedar CSS */
+.DateInput_input {
+  width: 100% !important;
+}
+
+.CalendarDay__selected_span {
+  background: #E5FAFE !important;
+  color: #008FAD !important;
+}
+
+.CalendarDay__selected_span:hover {
+  background: #E5FAFE !important;
+  color: #008FAD !important;
+}
+
+
+.CalendarDay__selected_start, .CalendarDay__selected_end, .CalendarDay__selected {
+  background: #E5FAFE !important;
+  color: #008FAD !important;
+}
+
+.CalendarDay__hovered_span {
+  background: #00A9CC !important;
+  color: white !important;
+}
+/* End - Calendar CSS */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  input {
+    width: 100% !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  input {
+    width: 90% !important;
+  }
+  .pmd-5 {
+    padding: 2em !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  input {
+    width: 75% !important;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  input {
+    width: 50% !important;
+  }
+}
